@@ -1,0 +1,29 @@
+.my-buttons {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 4rem;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 12px;
+
+}
+
+.my-buttons:hover {
+    background-color: #495057;
+}
+
+.my-buttons:active, .my-buttons.active {
+    background-color: #1862ab;
+}
+
+.dm-buttons {
+  text-align: center;
+  margin-top: 200px;
+}
