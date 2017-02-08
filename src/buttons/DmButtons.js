@@ -1,6 +1,12 @@
 import React from 'react';
-// import { Link } from 'react-router';
-import MyButton from './MyButton';
+import { Link } from 'react-router';
+import './DmButtons.css';
+
+const MyButton = ({active, children, to}) => (
+    <Link to={to} className="my-buttons">
+            {children}
+    </Link>
+)
 
 const DmButtons = () => {
     return (

@@ -1,24 +1,25 @@
-.my-buttons {
+.menu {
+    background-color: #343a40;
+    height: 3.5rem;
+    margin-bottom: 0;
+}
+
+.menu-item {
     display: inline-block;
     color: white;
     font-size: 1rem;
-    line-height: 1rem;
-    width: 4rem;
-    margin: 1rem;
-    padding: 2rem;
+    line-height: 3.5rem;
+    width: 20%;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: none;
-    border: 2px solid white;
-    border-radius: 12px;
-
 }
 
-.my-buttons:hover {
+.menu-item:hover {
     background-color: #495057;
 }
 
-.my-buttons:active, .my-buttons.active {
+.menu-item:active, .menu-item.active {
     background-color: #1862ab;
 }
