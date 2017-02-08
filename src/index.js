@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import App from './App';
+import { App } from './containers';
 import Login from './router/Login';
 import Register from './router/Register';
 

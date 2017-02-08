@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Header from './HF/Header';
-import Footer from './HF/Footer';
-import DmButtons from './buttons/DmButtons';
-import OnSum from './etc/OnSum';
+import { Header, Footer, OnSum } from '../components';
+import DmButtons from '../buttons/DmButtons';
+
 import './App.css';
 
 class App extends Component {
@@ -13,9 +12,7 @@ class App extends Component {
           <div className="b-g2">
             <OnSum/>
           </div>
-          <div className="dm-buttons">
             <DmButtons/>
-          </div>
           <Footer/>
         </div>
     );

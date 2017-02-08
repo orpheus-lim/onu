@@ -1,5 +1,5 @@
 .b-g {
-  background-image: url(../public/pexels-photo.jpeg);
+  background-image: url(../../public/pexels-photo.jpeg);
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -10,10 +10,5 @@
   border: 2px solid white;
   border-radius: 12px;
   text-align: center;
-  margin: 11.2rem;
-}
-
-.dm-buttons {
-  text-align: center;
-  margin-top:
+  margin: 10rem;
 }
