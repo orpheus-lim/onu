@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './buttons/Header.js';
-import OnSum from './etc/OnSum.js';
+import DmButtons from './buttons/DmButtons';
+import OnSum from './etc/OnSum';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
         <div className="b-g">
           <div className="b-g2">
             <OnSum/>
-            <Header/>
+            <DmButtons/>
           </div>
         </div>
     );

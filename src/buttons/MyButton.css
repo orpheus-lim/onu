@@ -22,8 +22,3 @@
 .my-buttons:active, .my-buttons.active {
     background-color: #1862ab;
 }
-
-.dm-buttons {
-  text-align: center;
-  margin-top: 200px;
-}
