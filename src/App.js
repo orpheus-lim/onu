@@ -6,12 +6,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="b-g">
-        <div className="b-g2">
-          <OnSum/>
-          <Header/>
+        <div className="b-g">
+          <div className="b-g2">
+            <OnSum/>
+            <Header/>
+          </div>
         </div>
-      </div>
     );
   }
 }

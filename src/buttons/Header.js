@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router';
 import './Header.css';
 
 const MenuItem = ({active, children, to}) => (
-    <div className="my-buttons">
+    <Link to={to} className="my-buttons">
             {children}
-    </div>
+    </Link>
 )
 
 const Header = () => {
     return (
         <div>
             <div className="dm-buttons">
-            <MenuItem>로그인</MenuItem>
-            <MenuItem>회원가입</MenuItem>
+            <MenuItem to={'/login'}>로그인</MenuItem>
+            <MenuItem to={'/register'}>회원가입</MenuItem>
             </div>
         </div>
     );
