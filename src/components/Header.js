@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Header extends React.Component {
     render() {
@@ -9,21 +10,20 @@ class Header extends React.Component {
               </a>
           </li>
       );
-
-              return (
-                  <nav>
-                      <div className="nav-wrapper black">
-                          <a className="brand-logo center">온숨</a>
-                          <div className="right">
-                              <ul>
-                                  { this.props.isLoggedIn ? logoutButton : null }
-                              </ul>
-                          </div>
-                      </div>
-                  </nav>
-              );
-          }
-        }
+      return (
+          <nav>
+              <div className="nav-wrapper black">
+                  <Link to="/" className="brand-logo left">온숨</Link>
+                  <div className="right">
+                      <ul>
+                          { this.props.isLoggedIn ? logoutButton : null }
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      );
+  }
+}
 Header.propTypes = {
     isLoggedIn: React.PropTypes.bool,
     onLogout: React.PropTypes.func

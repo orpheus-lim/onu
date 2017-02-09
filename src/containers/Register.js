@@ -1,12 +1,17 @@
 import React from 'react';
+import {Header, Footer, Auth} from '../components';
 
 class Register extends React.Component {
+
   render() {
     return(
       <div>
-        회원가입
+        <Header/>
+        <Auth mode={false}/>
+        <Footer/>
       </div>
     );
   }
 }
+
 export default Register;

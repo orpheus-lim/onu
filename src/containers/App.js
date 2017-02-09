@@ -7,13 +7,17 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-        <div className="b-g">
+        <div>
           <Header/>
-          <div className="b-g2">
-            <OnSum/>
-          </div>
-            <DmButtons/>
-          <Footer/>
+            {this.props.childern}
+            <div className="b-g">
+              <div className="b-g2">
+                <OnSum/>
+              </div>
+                <DmButtons/>
+                <Footer/>
+            </div>
+
         </div>
     );
   }
