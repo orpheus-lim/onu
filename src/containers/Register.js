@@ -1,14 +1,12 @@
 import React from 'react';
-import {Header, Footer, Auth} from '../components';
+import { Authentication } from '../components';
 
 class Register extends React.Component {
 
   render() {
     return(
       <div>
-        <Header/>
-        <Auth mode={false}/>
-        <Footer/>
+        <Authentication mode={false}/>
       </div>
     );
   }

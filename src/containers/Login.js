@@ -1,13 +1,11 @@
 import React from 'react';
-import {Header, Footer, Auth} from '../components';
+import { Authentication } from '../components';
 
 class Login extends React.Component {
   render() {
     return(
       <div>
-        <Header/>
-        <Auth mode={true}/>
-        <Footer/>
+        <Authentication mode={true}/>
       </div>
     );
   }

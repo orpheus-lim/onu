@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import './Auth.css';
+import './Authentication.css';
 
-class Auth extends React.Component {
+class Authentication extends React.Component {
 
   constructor(props) {
         super(props);
@@ -86,16 +86,16 @@ class Auth extends React.Component {
     }
 }
 
-Auth.propTypes = {
+Authentication.propTypes = {
     mode: React.PropTypes.bool,
     onLogin: React.PropTypes.func,
     onRegister: React.PropTypes.func
 };
 
-Auth.defaultProps = {
+Authentication.defaultProps = {
     mode: true,
     onLogin: (id, pw) => { console.error("login function not defined"); },
     onRegister: (id, pw) => { console.error("register function not defined"); }
 };
 
-export default Auth;
+export default Authentication;
