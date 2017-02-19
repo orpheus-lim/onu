@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th, td {
+    width: 7%;
+    height: 4rem;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+td:hover {
+      background-color: #495057;
+}
+
+td:active, td.active {
+      background-color: #1862ab;
+}
+
+.part:hover{
+  background-color: white;
+}
+.part:active, .part.active {
+      background-color: white;
+}
