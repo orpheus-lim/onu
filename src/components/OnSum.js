@@ -1,5 +1,5 @@
 import React from 'react';
-import './BigText.css';
+import '../../public/css/BigText.css';
 
 const BigText = ({children}) => {
     return (

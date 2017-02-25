@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../../public/css/Footer.css';
 
 const MenuItem = ({active, children, to}) => (
     <div className="menu-item">

@@ -1,13 +1,13 @@
 table {
     border-collapse: collapse;
-    width: 70%;
+    width: 58rem;
+    height: 30rem;
 }
 
 th, td {
-    width: 7%;
+    width: 5%;
     height: 4rem;
-    padding: 8px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }

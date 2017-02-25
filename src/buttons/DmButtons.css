@@ -1,6 +1,6 @@
 .my-buttons {
     display: inline-block;
-    color: white;
+    color: black;
     font-size: 1rem;
     line-height: 1rem;
     width: 7rem;
@@ -10,7 +10,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid black;
 
 }
 
