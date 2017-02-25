@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../public/css/Table.css';
-const Table = () => {
+
+const Table = ({active, children, to}) => {
   return (
     <div>
       <h2>Bordered Table Dividers</h2>
@@ -19,7 +20,7 @@ const Table = () => {
         </tr>
         <tr>
         <td className="part">파트</td>
-        <td>Peter</td>
+        <a href="/mon_1"><td>Peter</td></a>
         <td>Griffin</td>
         <td>$100</td>
         <td>Peter</td>
