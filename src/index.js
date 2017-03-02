@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { App, Home, Main, SignupPage, Register, Mon_1 } from './containers';
-// import { Provider } from 'react-redux';
-// import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 // import reducers from './reducers';
-// import thunk from 'redux-thunk';
 
-// const store = createStore(reducers, applyMiddleware(thunk));
+const store = createStore(
+  (state = {}) => state,
+    applyMiddleware(thunk)
+);
 
 ReactDOM.render(
-  /* <Provider store={store}>*/
+  <Provider store={store}>
     <Router history={browserHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home}/>
@@ -20,6 +23,6 @@ ReactDOM.render(
           <Route path="register" component={Register}/>
         </Route>
     </Router>
-  /*</Provider>*/,
+  </Provider>,
   document.getElementById('root')
 );
