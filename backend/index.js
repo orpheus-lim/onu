@@ -1,8 +1,8 @@
-import express from 'express';
-import path from 'path';
-import morgan from 'morgan';
-import bodyParser from 'body-parser';
-import users from './routes/users';
+const express =require('express');
+const path =require('path');
+const bodyParser =require('body-parser');
+
+const users =require('./routes/users');
 
 let app = express();
 
@@ -17,14 +17,12 @@ app.get('*', (req, res) => {
 
 app.use('/', express.static(path.join(__dirname, './../public')));
 
-app.use(morgan('dev'));
-
 app.use(function(err, req, res, next) {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });
 
-const port = 3000;
+const port = 8080;
 app.listen(port, () => {
     console.log('Express is listening on port', port);
 });

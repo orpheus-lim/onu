@@ -16,7 +16,7 @@ class SignupPage extends Component {
   }
 }
 
-SignupForm.propTypes = {
+SignupPage.propTypes = {
   userSignupRequest: React.PropTypes.func.isRequired
 }
 export default connect(null, {userSignupRequest})(SignupPage);
